@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>L T W O I</title>
+    <meta name="description" content="LTWOI music" />
+    <meta name="author" content="LTWOI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon/ltwoi.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>   
+<body>
+
+    <div class="container">
+        <h1>L T W O I</h1>
+        <h2>"Ansikte mot Ansikte"</h2>
+        <h3>The story will be told 2018.</h3>
+        <div class="glitch-img" style="background-image: url('img/the-image.jpg')"></div>
+    </div>
+
+    <script
+	    src="https://code.jquery.com/jquery-2.2.4.min.js"
+	    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	    crossorigin="anonymous">
+    </script>
+    <script src="js/mgGlitch.min.js"></script>
+    <script>
+	$( function() {
+		$( ".glitch-img" ).mgGlitch({
+			destroy : false, // set 'true' to stop the plugin
+                        glitch: true, // set 'false' to stop glitching
+                        scale: true, // set 'false' to stop scaling
+                        blend : true, // set 'false' to stop glitch blending
+                        blendModeType : 'hue', // select blend mode type
+                        glitch1TimeMin : 600, // set min time for glitch 1 elem
+                        glitch1TimeMax : 900, // set max time for glitch 1 elem
+                        glitch2TimeMin : 10, // set min time for glitch 2 elem
+                        glitch2TimeMax : 115, // set max time for glitch 2 elem
+                        zIndexStart : 8, // because of absolute position, set z-index base value
+		});
+	});
+	</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109164439-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109164439-1');
+    </script>
+</body>
+</html>
